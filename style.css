@@ -134,7 +134,16 @@ h3 {
     align-items: center;
     justify-content: center;
     gap: 5px;
+    width: 50px;
+    cursor: pointer;
 }
 .love{
     color: red;
+}
+.right>div h4{
+  pointer-events: none;
+}
+
+.right>div h6{
+  pointer-events: none;
 }
