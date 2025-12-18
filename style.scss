@@ -1,0 +1,44 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+html, body {
+  height: 100%;
+  width: 100%;
+}
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+
+    section{
+        height: 100%;
+        flex-grow: 1;
+        background-size: cover;
+        background-position: center;
+        
+    }
+    section:hover{
+        flex-grow: 3;
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+    }
+    section:nth-child(1){
+        background-image: url(./img1.jpg);  
+    }
+    section:nth-child(2){
+        background-image: url(./img2.jpg);  
+    }
+    section:nth-child(3){
+        background-image: url(./img3.jpg);  
+    }
+    section:nth-child(4){
+        background-image: url(./img4.jpg);  
+    }
+    section:nth-child(5){
+        background-image: url(./img5.jpg);
+    }
+}

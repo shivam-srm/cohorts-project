@@ -1,0 +1,67 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+html, body {
+  height: 100%;
+  width: 100%;
+}
+main {
+  height: 200%;
+  width: 100%;
+  background-color: rgb(250, 247, 247);
+  display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 40px 1fr 1fr 1fr 1fr 1fr 80px;
+    grid-template-areas: "header header header"
+                         "about about about"
+                          "content1 content1 content1 "
+                          "content2  content2 content2 "
+                          "experties1 experties1 experties1"
+                         "experties2  experties2  experties2"
+                         "map map map"
+                           "footer footer footer";
+}
+
+header {
+  grid-area: header;
+  background-color: rgb(53, 84, 71);
+  display: flex;
+  color: #f6f4f4;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 20;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+about {
+  grid-area: about;
+  background-color: orange;
+}
+content1 {
+  grid-area: content1;
+  background-color: rgb(29, 11, 198);
+}
+content2 {
+  grid-area: content2;
+  background-color: rgb(198, 11, 192);
+}
+experties1 {
+  grid-area: experties1;
+  background-color: rgb(11, 198, 130);
+}
+experties2 {
+  grid-area: experties2;
+  background-color: rgb(11, 198, 198);
+}
+map {
+  grid-area: map;           
+    background-color: rgb(198, 193, 11);
+
+}
+footer {
+  grid-area: footer;
+  background-color: rgb(53, 84, 71);
+}   
