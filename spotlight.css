@@ -9,19 +9,13 @@ html, body {
   width: 100%;
   background-color: black;
 }
-:root{
-    --red: rgba(2, 2, 2, 0.84);
-    --color: rgba(24, 12, 49, 0);
-    --x:400px;
-    --y:400px;
-}
-body{
-    background-image: url(https://images.pexels.com/photos/35182275/pexels-photo-35182275.jpeg);
-    background-size: cover;
-}
-.box {
-    height: 100%;
-    width: 100%;
-    background: radial-gradient(160px at var(--x) var(--y) , var(--color), var(--red)); 
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+p {
+  color: rgb(1, 91, 21);
+  font-size: 24px;
 }
