@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    
+}
+body{
+    width: 100%;
+    height: 100%;
+   
+}
+#main{
+    width: 100%;
+    height: 100%;
+    font-familly: 'Times New Roman', Times, serif;
+    font-style: bold;
+    background-image: url(https://images.unsplash.com/photo-1638937480132-ebdc0219a4af?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    padding: 150px  150px;
+    font-size: 50px;
+     text-shadow: 1px 1px 1px #cb0eb2;
+
+}
+#botton{
+    margin: 10px  50px;
+
+}
+button{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px  20px;
+    font-size: 20px;
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-shadow: 1px 1px 1px #cb0eb2;
+}
+/* #header {
+    position: absolute;
+    text-shadow: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.132);
+    color: black;
+    font-size: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    padding: 10px 30px;
+    ;
+} */

@@ -1,149 +1,43 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  Font-family: 'helvetica neue', helvetica, arial, sans-serif;
 }
+
 html, body {
   height: 100%;
   width: 100%;
 }
-body {
-  background-color: #000000;
-}
+
 main {
   height: 100%;
   width: 100%;
-  background: linear-gradient(to right bottom , rgb(26,26,26), rgb(30,30,30),black);
-  padding: 20px;
-   
-   
+  display: flex;
+  gap: 10px;
 }
-section {
+main section {
   height: 100%;
-  width: 350px;
-  border-radius: 30px;
-  margin: auto;
-  background: #000000;
-
+  flex-grow: 1;
+  background-size: cover;
+  background-position: center;
 }
-.all-reels {
-  height: 100%;
-  width: 100%;
-  overflow: auto;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
- 
-  
+main section:hover {
+  flex-grow: 3;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
 }
-.all-reels::-webkit-scrollbar {
-  display: none;
+main section:nth-child(1) {
+  background-image: url(./img1.jpg);
 }
-.reel{
-    height: 100%;
-    width: 100%;
-    position: relative;
-    border-radius: 30px;
-    overflow: hidden;
-    margin-bottom: 20px;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-
-    
-    
+main section:nth-child(2) {
+  background-image: url(./img2.jpg);
 }
-.reel video{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 30px;
-    
+main section:nth-child(3) {
+  background-image: url(./img3.jpg);
 }
-.reel .bottom {
-    padding: 30px 20px;
-    background: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.81));
-    width: 100%;
-    position: absolute;
-    bottom: 0;
+main section:nth-child(4) {
+  background-image: url(./img4.jpg);
 }
-.bottom .user {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: wheat;
-    margin: 20px 0;
-    
-}
-.bottom .user img {
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    object-fit: cover;
-    
-}
-.bottom .user h4 {
-    font-size: 14px;
-    font-weight: 500;
-}
-.bottom .user button {
-    margin-left: auto;
-    padding: 5px 10px;
-    border: rgb(0, 0, 0) solid 1px;
-    border-radius: 20px;
-    background-color: transparent;
-    color: white;
-    font-size: 12px;
-    cursor: pointer;
-    ;
-}
-h3 {
-    font-size: 16px;
-    font-weight: 500;
-    color: yellow;
-}
-.right{
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 25px;
-    width: 30px;
-    position: absolute;
-    right: 45px;
-    transform: translateX(100%);
-    bottom: 35px;
-    color: rgb(255, 252, 252);
-    
-    border-radius: 10px;
-}
-.right i:hover{
-    color: white;
-}
-.right i{
-    font-size: 20px;
-    cursor: pointer;
-}
-.right h6{
-    font-size: 12px;
-    font-weight: 500;
-}
-.right>div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    width: 50px;
-    cursor: pointer;
-}
-.love{
-    color: red;
-}
-.right>div h4{
-  pointer-events: none;
-}
-
-.right>div h6{
-  pointer-events: none;
-}
+main section:nth-child(5) {
+  background-image: url(./img5.jpg);
+}/*# sourceMappingURL=style.css.map */
