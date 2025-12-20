@@ -16,6 +16,8 @@ body {
   align-items: center;
 }
 p {
-  color: rgb(1, 91, 21);
-  font-size: 24px;
+  color: rgb(6, 206, 49);
+  font-size: 3rem;
+  font-weight: 800px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
