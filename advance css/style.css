@@ -8,43 +8,32 @@ html, body {
   height: 100%;
   width: 100%;
 }
-body{
+body {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  background-color: #040404;
-  anchor-name: --some-anchor;
+  background: #0f0f0f;
+  transition: all 0.3s linear;
 }
-.box{
-  height: 200px;
-  width: 200px;
-
-}
-.box:hover{
-  anchor-name: --some-anchor;
-}
-.red{
-  background-color: red;
-  
-}
-.blue{
-  background-color: blue;
-  
-}
-.green{
-  background-color: green;
-}
-
-.anchor{
-  background-color: whitesmoke;
-  border-radius: 10px;
-  position:absolute;
-  top:anchor(top);
-  left:anchor(left);
-  bottom: anchor(bottom);
-  right: anchor(right);
-  pointer-events: none;
-  position-anchor: --some-anchor;
-  transition: all 0.5s linear;
-  mix-blend-mode: exclusion;
-}
+  .box {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+  }
+  .red {
+    background: red;
+  }
+  .blue {
+    background: blue;
+  }
+  .green {
+    background: green;
+  }
+ .box:hover {
+    transform: scale(1.2) !important;
+    
+ }
+ body:has(.box:hover) .box {
+    transform: scale(0.5);
+ }
