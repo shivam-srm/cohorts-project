@@ -50,7 +50,7 @@ const users = [
     "why@hello.com"
 ];
 
-((email)=>{
+const sendEmail= ((email)=>{
     return new Promise((resolve,reject)=>{
         let time = Math.floor(Math.random()*5)
       setTimeout(()=>{
@@ -64,6 +64,19 @@ const users = [
     },time* 1000)
     })
 })
-("shivam@mail.com")
-.then(msg=> console.log(msg))
-.catch(err=> console.log(err));
+
+async function sendEmails(userlist) {
+    let allresponse = userlist.map(email =>
+        sendEmail(email)
+            .then(res => res)
+            .catch(err => err)
+    );
+
+    let ans = await Promise.all(allresponse);
+
+    ans.forEach(status => {
+        console.log(status);
+    });
+}
+
+sendEmails(users);
